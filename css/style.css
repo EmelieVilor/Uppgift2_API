@@ -1,0 +1,178 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --background: #faf6fa;
+    --primary: #624185;
+    --accent: #ff8a30;
+    --light: #E8D4E8;
+}
+
+body {
+    background-color:var(--background);
+    color: #4c327d;
+    font-family:'Helvetica Neue', Helvetica, Arial;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Helvetica Neue', Helvetica;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-style: normal;
+    font-size: 20px;
+}
+
+
+h2 {
+    font-family: 'Helvetica Neue', Helvetica;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-style: normal;
+    font-size: 20px;
+    margin-bottom: 10px;
+
+}
+
+h3 {
+    font-family: 'Helvetica Neue', Helvetica;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.5;
+
+}
+
+p {
+    font-family: 'Helvetica Neue', Helvetica;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-style: normal;
+    font-size: 13px;
+
+}
+
+nav {
+    background-color: var(--background);
+    color: #4c327d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+nav h2 {
+    font-family: "Abril Fatface", serif;
+    text-transform: none;
+    font-size: 32px;
+    font-weight: 300;
+    font-style: normal;
+    color: var(--accent);
+}
+
+i {
+font-size: 20px;
+color: var(--primary);
+cursor: pointer;
+
+}
+
+header {
+    padding: 50px;
+}
+
+/* ------------------------------- Cards ---------------------------------- */
+
+
+#cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px; 
+    margin-top: 30px;
+    width: 100%;
+}
+
+.card {
+    padding: 20px;
+    width: 380px;
+    height: 270px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    justify-content: left;
+    background-color: var(--light);
+    color: var(--primary);
+    padding: 20px;
+}
+
+
+hr {
+    border: 1px solid var(--primary);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.more-info {
+    display: none;
+    margin-top: 10px;
+}
+
+.show-more-btn{
+    padding: 10px;
+    background-color: var(--primary);
+    border: none;
+    color: var(--background);
+    margin-top: 20px;
+    cursor: pointer;
+    width: 100%;
+
+    font-family: 'Helvetica Neue', Helvetica;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-style: normal;
+    font-size: 13px;
+}
+
+/* ------------------------------- Footer ---------------------------------- */
+
+
+footer {
+    background-color: var(--primary);
+    color: var(--background);
+    padding: 30px;
+    margin-top: 40px;
+}
+
+
+/* ------------------------------- Media Queries ---------------------------------- */
+
+@media screen and (max-width: 1300px) {
+    .cards-container {
+        display: grid;
+        grid-template-columns: auto auto;
+
+    }
+
+    #background_img {
+        position: fixed;
+        top: 0;
+        left: 0;
+}
+}
+
+@media screen and (max-width: 800px) {
+    .cards-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        
+    }
+
+}
